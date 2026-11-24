@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareTrack Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h1>CareTrack</h1>
+        <p>Residential Care Management</p>
+
+        <nav>
+            <a class="active" href="/">Dashboard</a>
+            <span>Young People</span>
+            <span>Daily Logs</span>
+            <span>Incident Reports</span>
+            <span>Missing From Care</span>
+            <span>Medication</span>
+            <span>Key Work Sessions</span>
+            <span>Risk Assessments</span>
+            <span>Reports</span>
+        </nav>
+
+        <footer>CareTrack v0.2</footer>
+    </aside>
+
+    <main class="main-content">
+
+        <header>
+            <h1>Dashboard</h1>
+            <p>Welcome to your residential care workspace.</p>
+            <p class="notice">Demonstration only - fictional data</p>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Young People</h3>
+                <h2>3</h2>
+                <p>Active profiles</p>
+            </div>
+
+            <div class="card">
+                <h3>Daily Logs</h3>
+                <h2>24</h2>
+                <p>Recorded entries</p>
+            </div>
+
+            <div class="card">
+                <h3>Incidents</h3>
+                <h2>2</h2>
+                <p>Recorded incidents</p>
+            </div>
+
+            <div class="card">
+                <h3>Key Work</h3>
+                <h2>8</h2>
+                <p>Completed sessions</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Recent Activity</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Morning daily log</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Key work session</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Daily activity recorded</td>
+                        <td>Pending review</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>CareTrack Development</h2>
+            <p>Supporting person-centred care, safeguarding
+                and professional documentation.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
